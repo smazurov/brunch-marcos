@@ -28,4 +28,8 @@ exports.config =
         # after: ['vendor/styles/helpers.css']
     templates:
       joinTo: 'javascripts/app.js'
+
+  stylus: # https://github.com/brunch/stylus-brunch#spriting
+    spriting: no,
+    iconPath: 'app/assets/images'
   minify: no

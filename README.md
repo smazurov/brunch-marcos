@@ -14,20 +14,22 @@ into it, and by using brunch you can incorporate `CoffeeScript`, `LiveScript` or
 * [Stylus](http://learnboost.github.com/stylus/) with [nib](http://visionmedia.github.com/nib/) - dynamic stylesheet language, comparable with LESS and SASS 
 * [LayoutManager](https://github.com/tbranyen/backbone.layoutmanager) - because you need something to help backbone wrangle those views 
 
-## Installation
+## Install
 
-- Install (node.js)[http://nodejs.org/]
+- Install [node.js](http://nodejs.org)
 - Install Brunch: `sudo npm install -g brunch`
 - Run `brunch new <project name> -s github://smazurov/brunch-marcos` to download the skeleton into your project folder.
-- `$cd <project name>`
+- `$ cd <project name>`
 - Run `npm install` to install any node dependencies listed in `package.json`. 
 
-## Running Brunch
+## Compiling
+
 - To build your project run `brunch build`.
 - To continually watch your project folder changes and auto-compile, use `brunch watch`.
 - If you want to start a simple server, run `brunch watch --server`
+- If you want to build a minified version (for production release), run `brunch build --minify`
 
-See more info on the [offical brunch docs](http://brunch.readthedocs.org/en/latest/)
+See more info on the [official brunch docs](http://brunch.readthedocs.org/en/latest/)
 
 ## Unit Testing
 
@@ -35,6 +37,15 @@ The [Mocha](http://visionmedia.github.com/mocha/) test-suite is included by defa
 
 To run tests independent of the browser, execute `brunch test`; to run them in the browser, navigate to `public/test/index.html`.  Test-related code is automatically recompiled during `brunch build` and `brunch watch`, and will automatically refresh the test page.
 
+# More Information
+
+## Todo
+
+- Get a basic skeleton app
+- Write tests for it
+- Write generators
+- include a more involved example application
+- screencast
 
 ## Dependency Versions
 
@@ -68,3 +79,23 @@ Handlebars was chosen due to its popularity and the way it restricts what you ca
 ### Backbone LayoutManager (LM)
 
 `LM` provides a logical structure for assembling layouts with Backbone Views. Designed to be adaptive and configurable for painless integration. Includes automatic cleanup as well as ability to define your own to make sure all your events are taken care of and no zombies are left hungering for brains.
+
+##License
+Brunch Marcos is distributed under the MIT license. All 3rd party libraries and components are distributed under their respective license terms.
+
+```
+Copyright (C) 2012 Stepan Mazurov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
