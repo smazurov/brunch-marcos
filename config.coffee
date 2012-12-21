@@ -33,3 +33,5 @@ exports.config =
     spriting: no,
     iconPath: 'app/assets/images'
   minify: no
+  test:
+    ui: 'tdd'
