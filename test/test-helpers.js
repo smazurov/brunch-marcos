@@ -5,14 +5,11 @@ var chai = require('chai');
 /*!
  * Provide check for fail function.
  */
-
-
-
 module.exports = {
-  assert: chai.assert,
-  // expect: chai.expect,
+  // assert: chai.assert,
+  expect: chai.expect,
   should: chai.should,
-  chai: chai,
+  // $: require('jquery'),
   err: function (fn, msg) {
     try {
       fn();

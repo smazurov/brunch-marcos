@@ -36,6 +36,10 @@ See more info on the [official brunch docs](http://brunch.readthedocs.org/en/lat
 The [Mocha](http://visionmedia.github.com/mocha/) test-suite is included by default.  Files located in `tests` that end with `_test.js` (or .coffee) are automatically packaged.  
 
 To run tests independent of the browser, execute `brunch test`; to run them in the browser, navigate to `public/test/index.html`.  Test-related code is automatically recompiled during `brunch build` and `brunch watch`, and will automatically refresh the test page.
+To set up and get started on using a specific testing interface, take a look at the following guides
+* [TDD](https://gist.github.com/4361378)
+* [BDD](https://gist.github.com/4361398)
+* [QUnit](https://gist.github.com/4361413)
 
 # More Information
 

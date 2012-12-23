@@ -34,4 +34,4 @@ exports.config =
     iconPath: 'app/assets/images'
   minify: no
   test:
-    ui: 'tdd'
+    ui: 'bdd'

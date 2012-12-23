@@ -7,6 +7,9 @@ module.exports = Backbone.Router.extend({
   },
 
   home: function() {
-    console.log('sup');
+    var HomeLayout = require('views/home-layout');
+    var layout = new HomeLayout({});
+    console.log(layout.render().view.$el);
+    $('body').empty().append(layout.render().view.el);
   }
 });
