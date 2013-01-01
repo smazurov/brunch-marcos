@@ -10,7 +10,7 @@ exports.config =
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^vendor/
         'test/javascripts/test.js': /^test(\/|\\)(?!vendor)/
-        'test/javascripts/test-vendor.js': /^test(\/|\\)(?=vendor)/
+        'test/javascripts/vendor.js': /^test(\/|\\)(?=vendor)/
       order:
         before: [
           'vendor/scripts/console-helper.js',
