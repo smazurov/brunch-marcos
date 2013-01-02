@@ -16,6 +16,7 @@
 .project
 .settings
 .tmproj
+.tags
 nbproject
 Thumbs.db
 

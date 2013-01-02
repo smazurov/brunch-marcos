@@ -1,5 +1,5 @@
-var Model = require('model'),
-  Collection = require('collection'),
+var Model = require('./model'),
+  Collection = require('./collection'),
   Link = {};
 
 Link.Model = Model.extend({
