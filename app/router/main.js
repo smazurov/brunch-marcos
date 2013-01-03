@@ -8,8 +8,7 @@ module.exports = Backbone.Router.extend({
 
   home: function() {
     var HomeLayout = require('views/home-layout');
-    var layout = new HomeLayout({});
-    console.log(layout.render().view.$el);
-    $('body').empty().append(layout.render().view.el);
+    var layout = new HomeLayout();
+    $('body').empty().append(layout.el);
   }
 });
