@@ -11,8 +11,8 @@ describe('Home Page', function(){
       expect(homeLayout).to.have.property('$el');
     });
     it('layout should be rendered', function() {
-      expect(homeLayout.__manager__).to.have.property('hasRendered')
-        .that.is.true;
+      homeLayout.__manager__.should.have.property('hasRendered')
+        .that.equals(true);
     });
     it('$el should be able to find a child element', function() {
       expect(view.$el.find('header')).to.have.length(1);
