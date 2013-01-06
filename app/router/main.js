@@ -1,14 +1,23 @@
 var app = require('app');
 
+function renderRegion(region) {
+  var HomeLayout = require('views/home-layout');
+  var layout = new HomeLayout({page: region});
+  layout.render();
+  $('body').empty().append(layout.el);
+}
+
 // Defining the application router
 module.exports = Backbone.Router.extend({
   routes: {
-    '': 'home'
+    '': 'index',
+    'docs': 'docs'
   },
 
-  home: function() {
-    var HomeLayout = require('views/home-layout');
-    var layout = new HomeLayout();
-    $('body').empty().append(layout.el);
+  index: function() {
+    renderRegion('index');
+  },
+  docs: function() {
+    renderRegion('docs');
   }
 });

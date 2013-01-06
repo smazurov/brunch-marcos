@@ -24,12 +24,23 @@ describe("Link Model", function() {
       collection.initializeHeaderLinks();
     });
 
-    it('should have 3 links', function(){
-      collection.models.should.have.length(3);
+    it('should have 4 links', function(){
+      collection.models.should.have.length(4);
     });
-    it('should have 1 external link', function(){
-      collection.where({external: true}).should.have.length(1);
+    it('should have 2 external link', function(){
+      collection.where({external: true}).should.have.length(2);
     });
   });
+  describe('Docs Links', function() {
+    beforeEach(function() {
+      collection.initializeDocsLinks();
+    });
 
+    it('should have 10 links', function() {
+      collection.models.should.have.length(10);
+    });
+    it('all links should be external', function() {
+      collection.where({external: true}).length.should.equal(collection.models.length);
+    });
+  });
 });

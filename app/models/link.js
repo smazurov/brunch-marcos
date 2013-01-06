@@ -14,20 +14,80 @@ Link.Collection = Collection.extend({
   initializeHeaderLinks: function(data) {
     if (!data) {
       data = [{
-        name: 'Link 1',
-        url: '/link1'
+        name: 'Docs',
+        url: '/docs'
       },
       {
-        name: 'Link 2',
+        name: 'Brunch',
         url: '//brunch.io',
         external: true
       },
       {
-        name: 'Link 3',
+        name: 'Fork me on Github',
+        url: '//github.com/smazurov/brunch-marcos',
+        external: true
+      },
+      {
+        name: 'Tests',
         url: '/test/'
       }];
     }
-    this.add(data);
+    this.reset(data);
+  },
+  initializeDocsLinks: function(data) {
+    if (!data) {
+      data = [{
+        name: 'README',
+        url: '//github.com/smazurov/brunch-marcos/blob/master/README.md',
+        external: true
+      },
+      {
+        name: 'Brunch-Marcos Issues',
+        url: '//github.com/smazurov/brunch-marcos/issues',
+        external: true
+      },
+      {
+        name: 'LayoutManager',
+        url: 'http://tbranyen.github.com/backbone.layoutmanager/',
+        external: true
+      },
+      {
+        name: 'Backbone.js',
+        url: 'http://backbonejs.org/',
+        external: true
+      },
+      {
+        name: 'Lo-Dash',
+        url: 'http://lodash.com/docs',
+        external: true
+      },
+      {
+        name: 'Stylus',
+        url: 'http://learnboost.github.com/stylus/',
+        external: true
+      },
+      {
+        name: 'Brunch Docs',
+        url: '//brunch.readthedocs.org/',
+        external: true
+      },
+      {
+        name: 'Brunch Issues',
+        url: '//github.com/brunch/brunch/issues',
+        external: true
+      },
+      {
+        name: 'Brunch Skeletons',
+        url: '//github.com/brunch/brunch/wiki/Skeletons',
+        external: true
+      },
+      {
+        name: 'Brunch Plugins',
+        url: '//github.com/brunch/brunch/wiki/Plugins',
+        external: true
+      }];
+    }
+    this.reset(data);
   }
 });
 module.exports = Link;
