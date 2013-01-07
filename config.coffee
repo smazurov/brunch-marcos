@@ -17,7 +17,7 @@ exports.config =
           'vendor/scripts/jquery-1.8.3.js',
           'vendor/scripts/lodash.underscore-1.0.0.rc.3.js',
           'vendor/scripts/backbone-0.9.9.js',
-          'vendor/scripts/backbone.layoutmanager-0.7.3.js'
+          'vendor/scripts/backbone.layoutmanager-0.8.0-pre.js'
         ]
     stylesheets:
       joinTo:
