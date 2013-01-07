@@ -13,7 +13,7 @@ module.exports = View.extend({
     links.initializeHeaderLinks();
     var header = new Header({collection: links});
     var content = new Content();
-    this.insertView('header', header);
+    this.setView('header', header);
     this.insertView('content', content);
   }
 });

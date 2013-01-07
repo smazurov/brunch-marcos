@@ -15,21 +15,20 @@ describe('Home Page', function() {
         .that.equals(true);
     });
     it('$el should be able to find a child element', function() {
-      expect(view.$el.find('header')).to.have.length(1);
+      expect(headerEl).to.have.length(1);
     });
   });
   describe('Header', function() {
-    it.skip('should display 4 links', function() {
-      expect(headerEl.find('ul')).to.have.length(4);
+    it('should display 4 links', function() {
+      expect(headerEl.find('ul li')).to.have.length(4);
     });
-    it.skip('expect external links to have target=_blank', function() {
-      expect(headerEl.find('a[target="_blank"]')).to.have.length(1);
+    it('expect external links to have target=_blank', function() {
+      expect(headerEl.find('a[target="_blank"]')).to.have.length.of.at.least(1);
     });
-    it.skip('expect to have 2 external links', function() {
+    it('expect to have 2 external links', function() {
       expect(headerEl.find('a[target="_blank"]')).to.have.length(2);
     });
-    it.skip('should have a logo', function() {
-      console.log(view);
+    it('should have a logo', function() {
       expect(headerEl.find('img')).to.have.length(1);
     });
   });

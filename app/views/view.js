@@ -20,7 +20,6 @@ var View = Backbone.Layout.extend({
       list = selector;
     }
     if (_.isString(viewObj)) {
-
       selector = viewObj;
       viewObj = View;
     } else if (_.isArray(viewObj)) {
