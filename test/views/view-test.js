@@ -14,9 +14,6 @@ describe('Baseline View', function() {
     listView = new ListView({collection: collection});
     customList = collection.where({custom: true});
   });
-  function getViewsAsArray(view) {
-    return view.getViews().value();
-  }
   describe('Iterating over a list of models (iterateOverList)', function() {
     it('should work with no paramaters', function() {
       listView.iterateOverList();
