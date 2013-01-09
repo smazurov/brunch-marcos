@@ -1,10 +1,13 @@
 describe('Home Page', function() {
   var HomeLayout = require('views/home-layout');
-  var homeLayout = new HomeLayout({page: 'index'});
-  var view, headerEl;
-  beforeEach(function() {
+  var homeLayout = new HomeLayout();
+  var view, headerEl, layoutEl;
+
     view = homeLayout.render().view;
-    headerEl = view.$el.find('header');
+  view.trigger('route', 'index');
+  beforeEach(function() {
+    layoutEl = view.$el;
+    headerEl = layoutEl.find('header');
   });
   describe('Layout', function() {
     it('should have a jquery wrapped $el',function() {
@@ -16,6 +19,9 @@ describe('Home Page', function() {
     });
     it('$el should be able to find a child element', function() {
       expect(headerEl).to.have.length(1);
+    });
+    it('there should be a link back to the homepage', function() {
+      expect(layoutEl.find('a[href="/"]')).to.have.length.of.at.least(1);
     });
   });
   describe('Header', function() {

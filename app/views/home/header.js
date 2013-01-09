@@ -12,6 +12,7 @@ var LinksView = View.extend({
 module.exports = View.extend({
   template: template,
   el: false,
+  keep: true,
 
   beforeRender: function() {
     this.iterateOverList(LinksView, '.links');
