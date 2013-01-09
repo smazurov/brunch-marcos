@@ -1,7 +1,6 @@
 // This file will be automatically required when using `brunch test` command.
 
 var chai = require('chai');
-
 /*!
  * Provide check for fail function.
  */
