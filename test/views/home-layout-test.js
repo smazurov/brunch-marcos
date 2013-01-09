@@ -3,7 +3,7 @@ describe('Home Page', function() {
   var homeLayout = new HomeLayout();
   var view, headerEl, layoutEl;
 
-    view = homeLayout.render().view;
+  view = homeLayout.render().view;
   view.trigger('route', 'index');
   beforeEach(function() {
     layoutEl = view.$el;
@@ -22,6 +22,10 @@ describe('Home Page', function() {
     });
     it('there should be a link back to the homepage', function() {
       expect(layoutEl.find('a[href="/"]')).to.have.length.of.at.least(1);
+    });
+    it('there should be content', function() {
+      console.log(layoutEl.find('content').text());
+      expect(layoutEl.find('content').text()).to.have.length.of.at.least(2);
     });
   });
   describe('Header', function() {

@@ -1,8 +1,14 @@
+var getMainRegion = _.once(function() {
+    var MainLayout = require('views/home-layout');
+    var layout = new MainLayout({keep: true});
+    $('body').empty().append(layout.el);
+    layout.render();
+    return layout;
+  });
 function renderRegion(region) {
-  var HomeLayout = require('views/home-layout');
-  var layout = new HomeLayout({page: region});
-  layout.render();
-  $('body').empty().append(layout.el);
+  var layout = getMainRegion();
+  layout.trigger('route', region);
+  return layout;
 }
 
 // Defining the main application router
