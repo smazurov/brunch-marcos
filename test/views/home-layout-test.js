@@ -25,9 +25,6 @@ describe('Home Page', function() {
     it('expect external links to have target=_blank', function() {
       expect(headerEl.find('a[target="_blank"]')).to.have.length.of.at.least(1);
     });
-    it('expect to have 2 external links', function() {
-      expect(headerEl.find('a[target="_blank"]')).to.have.length(2);
-    });
     it('should have a logo', function() {
       expect(headerEl.find('img')).to.have.length(1);
     });

@@ -27,8 +27,8 @@ describe("Link Model", function() {
     it('should have 4 links', function(){
       collection.models.should.have.length(4);
     });
-    it('should have 2 external link', function(){
-      collection.where({external: true}).should.have.length(2);
+    it('should have 3 external link', function(){
+      collection.where({external: true}).should.have.length(3);
     });
   });
   describe('Docs Links', function() {

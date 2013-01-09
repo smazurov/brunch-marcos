@@ -29,7 +29,8 @@ Link.Collection = Collection.extend({
       },
       {
         name: 'Tests',
-        url: '/test/'
+        url: '/test/',
+        external: true
       }];
     }
     this.reset(data);
