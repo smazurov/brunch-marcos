@@ -1,7 +1,7 @@
 var getMainRegion = _.once(function() {
     var MainLayout = require('views/home-layout');
-    var layout = new MainLayout({keep: true});
-    $('body').empty().append(layout.el);
+    var layout = new MainLayout({el: $('div#app')});
+    // $('body').empty().append(layout.el);
     layout.render();
     return layout;
   });

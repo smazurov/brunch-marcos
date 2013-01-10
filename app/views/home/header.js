@@ -11,7 +11,7 @@ var LinksView = View.extend({
 
 module.exports = View.extend({
   template: template,
-  el: false,
+  id: 'header',
   keep: true,
 
   beforeRender: function() {
