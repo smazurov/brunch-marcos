@@ -24,7 +24,6 @@ describe('Home Page', function() {
       expect(layoutEl.find('a[href="/"]')).to.have.length.of.at.least(1);
     });
     it('there should be content', function() {
-      console.log(layoutEl.find('content').text());
       expect(layoutEl.find('content').text()).to.have.length.of.at.least(2);
     });
   });
