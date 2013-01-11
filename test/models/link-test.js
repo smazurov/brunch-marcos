@@ -39,8 +39,8 @@ describe("Link Model", function() {
     it('should have 10 links', function() {
       collection.models.should.have.length(10);
     });
-    it('all links should be external', function() {
-      collection.where({external: true}).length.should.equal(collection.models.length);
+    it('all links should not be external', function() {
+      collection.where({external: true}).length.should.not.equal(collection.models.length);
     });
   });
 });

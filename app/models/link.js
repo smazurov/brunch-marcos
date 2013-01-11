@@ -39,8 +39,7 @@ Link.Collection = Collection.extend({
     if (!data) {
       data = [{
         name: 'README',
-        url: '//github.com/smazurov/brunch-marcos/blob/master/README.md',
-        external: true
+        url: '/'
       },
       {
         name: 'Brunch-Marcos Issues',
