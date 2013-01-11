@@ -5,14 +5,14 @@ Simple javascript backbone.js skeleton built on top of [brunch](http://brunch.io
 
 ### Included tech
 
-* Javascript - because you should know JS before learning anything that compiles 
-into it, and by using brunch you can incorporate `CoffeeScript`, `LiveScript` or anything, really, when you feel comfortable. 
+* Javascript - because you should know JS before learning anything that compiles
+into it, and by using brunch you can incorporate `CoffeeScript`, `LiveScript` or anything, really, when you feel comfortable.
 * [Backbone](http://backbonejs.org/) - why we're all here
 * [Lo-Dash](http://lodash.com) - An alternative to Underscore.js, delivering consistency, customization, performance, and extra features.
 * [jQuery](http://jquery.com/) - For that low level dom manipulation
 * [Handlebars](http://handlebarsjs.com) - sensible default thats faster than underscore, wildly used and understood
-* [Stylus](http://learnboost.github.com/stylus/) with [nib](http://visionmedia.github.com/nib/) - dynamic stylesheet language, comparable with LESS and SASS 
-* [LayoutManager](https://github.com/tbranyen/backbone.layoutmanager) - because you need something to help backbone wrangle those views 
+* [Stylus](http://learnboost.github.com/stylus/) with [nib](http://visionmedia.github.com/nib/) - dynamic stylesheet language, comparable with LESS and SASS
+* [LayoutManager](https://github.com/tbranyen/backbone.layoutmanager) - because you need something to help backbone wrangle those views
 
 ## Install
 
@@ -20,7 +20,7 @@ into it, and by using brunch you can incorporate `CoffeeScript`, `LiveScript` or
 - Install Brunch: `sudo npm install -g brunch`
 - Run `brunch new <project name> -s github://smazurov/brunch-marcos` to download the skeleton into your project folder.
 - `$ cd <project name>`
-- Run `npm install` to install any node dependencies listed in `package.json`. 
+- Run `npm install` to install any node dependencies listed in `package.json`.
 
 ## Compiling
 
@@ -33,10 +33,11 @@ See more info on the [official brunch docs](http://brunch.readthedocs.org/en/lat
 
 ## Unit Testing
 
-The [Mocha](http://visionmedia.github.com/mocha/) test-suite is included by default.  Files located in `tests` that end with `_test.js` (or .coffee) are automatically packaged.  
+The [Mocha](http://visionmedia.github.com/mocha/) test-suite is included by default.  Files located in `tests` that end with `_test.js` (or .coffee) are automatically packaged.
 
 To run tests independent of the browser, execute `brunch test`; to run them in the browser, navigate to `public/test/index.html`.  Test-related code is automatically recompiled during `brunch build` and `brunch watch`, and will automatically refresh the test page.
-To set up and get started on using a specific testing interface, take a look at the following guides
+To set up and get started on using a specific testing interface, take a look at the following guides:
+
 * [TDD](https://gist.github.com/4361378)
 * [BDD](https://gist.github.com/4361398)
 * [QUnit](https://gist.github.com/4361413)
@@ -45,11 +46,11 @@ To set up and get started on using a specific testing interface, take a look at 
 
 ## Todo
 
-- Get a basic skeleton app
-- Write tests for it
-- Write generators
-- include a more involved example application
-- screencast
+- [x] Get a basic skeleton app
+- [x] Write tests for it
+- [ ] Write generators
+- [x] include a more involved example application
+- [ ] screencast
 
 ## Dependency Versions
 
