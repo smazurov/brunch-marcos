@@ -1,0 +1,56 @@
+
+//Headlines
+
+h1, h2, h3, h4, h5, h6
+  margin: ($baseLineHeight / 2) 0
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-weight: normal
+  line-height: $baseLineHeight
+  color: $textColor
+  text-rendering: optimizelegibility // Fix the character spacing for headings
+  small
+    font-weight: normal
+    line-height: 1
+    color: $textColor
+
+a
+  text-decoration: none
+  color: #4183C4
+
+  &:hover
+    text-decoration: underline
+
+h1,
+h2,
+h3
+  line-height: $baseLineHeight * 2
+h1
+  font-size: $baseFontSize * 2.75 // ~38px
+h2
+  font-size: $baseFontSize * 2.25 // ~32px
+h3
+  font-size: $baseFontSize * 1.75 // ~24px
+h4
+  font-size: $baseFontSize * 1.25 // ~18px
+h5
+  font-size: $baseFontSize
+h6
+  font-size: $baseFontSize * 0.85 // ~12px
+
+// Paragraph
+p
+  margin: 0 0 ($baseLineHeight / 2)
+
+// Unordered and Ordered lists
+ul,
+ol
+  padding: 0
+  margin: 0 0 ($baseLineHeight / 2) 25px
+  list-style-type: disc
+ul ul,
+ul ol,
+ol ol,
+ol ul
+  margin-bottom: 0
+li
+  line-height: $baseLineHeight
