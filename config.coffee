@@ -23,8 +23,11 @@ exports.config =
       joinTo:
         'styles/app.css': /^(app|vendor)/,
         'test/styles/test.css': /^test/
-      # order:
-        # before: ['vendor/styles/normalize.css']
+      order:
+        before: [
+          'vendor/styles/grid.styl'
+          'app/views/styles/index.styl'
+        ]
         # after: ['vendor/styles/helpers.css']
     templates:
       joinTo: 'scripts/app.js'
