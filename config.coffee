@@ -36,5 +36,7 @@ exports.config =
     spriting: no,
     iconPath: 'app/assets/images'
   minify: no
-  test:
-    ui: 'bdd'
+  modules:
+    wrapper: 'commonjs'
+    definition: 'commonjs'
+    addSourceURLs: true
