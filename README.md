@@ -35,7 +35,7 @@ See more info on the [official brunch docs](http://brunch.readthedocs.org/en/lat
 
 The [Mocha](http://visionmedia.github.com/mocha/) test-suite is included by default.  Files located in `tests` that end with `_test.js` (or .coffee) are automatically packaged.
 
-To run tests independent of the browser, execute `brunch test`; to run them in the browser, navigate to `public/test/index.html`.  Test-related code is automatically recompiled during `brunch build` and `brunch watch`, and will automatically refresh the test page.
+To run tests in the browser, navigate to `public/test/index.html`.  Test-related code is automatically recompiled during `brunch build` and `brunch watch`, and will automatically refresh the test page.
 To set up and get started on using a specific testing interface, take a look at the following guides:
 
 * [TDD](https://gist.github.com/4361378)
@@ -48,7 +48,7 @@ To set up and get started on using a specific testing interface, take a look at 
 
 - [x] Get a basic skeleton app
 - [x] Write tests for it
-- [ ] Write generators
+- [ ] <del>Write generators</del>
 - [x] include a more involved example application
 - [ ] screencast
 
@@ -56,12 +56,12 @@ To set up and get started on using a specific testing interface, take a look at 
 
 Might not be entirely up to date, `Handlebars` and `Stylus` depend on their respective `brunch` plugins
 
-* [Backbone 0.9.9](http://backbonejs.org/)
-* [Lo-Dash v1.0.0-rc.3](http://lodash.com)
-* [jQuery 1.8.3](http://jquery.com/)
-* [LayoutManager 0.7.3](https://github.com/tbranyen/backbone.layoutmanager)
-* [Handlebars 1.0rc1](http://handlebarsjs.com)
-* [Stylus 0.30.x](http://learnboost.github.com/stylus/) with [nib 0.8.x](http://visionmedia.github.com/nib/)
+* [Backbone 1.0.0](http://backbonejs.org/)
+* [Lo-Dash v1.0.1](http://lodash.com)
+* [jQuery 1.9.1](http://jquery.com/)
+* [LayoutManager 0.8.7](https://github.com/tbranyen/backbone.layoutmanager)
+* [Handlebars 1.0.10](http://handlebarsjs.com)
+* [Stylus 0.32.x](http://learnboost.github.com/stylus/) with [nib 0.9.x](http://visionmedia.github.com/nib/)
 
 ## Whys
 
