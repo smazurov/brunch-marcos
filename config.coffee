@@ -14,10 +14,10 @@ exports.config =
       order:
         before: [
           'vendor/scripts/console-helper.js',
-          'vendor/scripts/jquery-1.8.3.js',
-          'vendor/scripts/lodash.underscore-1.0.0.rc.3.js',
-          'vendor/scripts/backbone-0.9.9.js',
-          'vendor/scripts/backbone.layoutmanager-0.8.0-pre.js'
+          'vendor/scripts/jquery-1.9.1.js',
+          'vendor/scripts/lodash.underscore-1.0.1.js',
+          'vendor/scripts/backbone-1.0.0.js',
+          'vendor/scripts/backbone.layoutmanager-0.8.7.js'
         ]
     stylesheets:
       joinTo:
