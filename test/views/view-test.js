@@ -24,6 +24,10 @@ describe('Baseline View', function() {
       expect(listView.views).to.have.property('.foo').to.have.length(4);
       expect(listView.views['.foo'][0].tagName).to.equal('div');
     });
+    it('should work with just a custom view', function() {
+      listView.iterateOverList(ItemView);
+      expect(listView.views[''][0].tagName).to.equal('li');
+    });
     it('should work with a custom view and list of models', function() {
       listView.iterateOverList(ItemView, customList);
       listView.views.should.have.property('').to.have.length(2);

@@ -1,6 +1,5 @@
 // This file will be automatically required when using `brunch test` command.
 
-var chai = require('chai');
 /*!
  * Provide check for fail function.
  */
@@ -16,5 +15,12 @@ module.exports = {
     } catch (err) {
       chai.expect(err.message).to.equal(msg);
     }
+  },
+
+  init: function() {
+    require('test/models/link-test');
+    require('test/router/main-test');
+    require('test/views/home-layout-test');
+    require('test/views/view-test');
   }
 };
