@@ -1,97 +1,66 @@
-<h1>Brunch Marcos</h1>
-<p>Simple javascript backbone.js skeleton built on top of <a href="http://brunch.io">brunch</a> that includes essentials and provides some guidance at creating maintainable apps.
-
-</p>
-<h3>Included tech</h3>
+<h1 id="brunch-marcos">Brunch Marcos</h1>
+<p>Simple javascript backbone.js skeleton built on top of <a href="http://brunch.io">brunch</a> that includes essentials and provides some guidance at creating maintainable apps.</p>
+<h3 id="included-tech">Included tech</h3>
 <ul>
 <li>Javascript - because you should know JS before learning anything that compiles
 into it, and by using brunch you can incorporate <code>CoffeeScript</code>, <code>LiveScript</code> or anything, really, when you feel comfortable.</li>
-<li><a href="http://backbonejs.org/">Backbone</a> - why we&#39;re all here</li>
+<li><a href="http://backbonejs.org/">Backbone</a> - why we're all here</li>
 <li><a href="http://lodash.com">Lo-Dash</a> - An alternative to Underscore.js, delivering consistency, customization, performance, and extra features.</li>
 <li><a href="http://jquery.com/">jQuery</a> - For that low level dom manipulation</li>
 <li><a href="http://handlebarsjs.com">Handlebars</a> - sensible default thats faster than underscore, wildly used and understood</li>
 <li><a href="http://learnboost.github.com/stylus/">Stylus</a> with <a href="http://visionmedia.github.com/nib/">nib</a> - dynamic stylesheet language, comparable with LESS and SASS</li>
 <li><a href="https://github.com/tbranyen/backbone.layoutmanager">LayoutManager</a> - because you need something to help backbone wrangle those views</li>
 </ul>
-<h2>Install</h2>
+<h2 id="install">Install</h2>
 <ul>
 <li>Install <a href="http://nodejs.org">node.js</a></li>
-<li>Install Brunch: <code>sudo npm install -g brunch</code></li>
-<li>Run <code>brunch new &lt;project name&gt; -s github://smazurov/brunch-marcos</code> to download the skeleton into your project folder.</li>
+<li>Install Brunch &amp; bower: <code>sudo npm install -g brunch bower</code></li>
+<li>Run <code>brunch new gh:smazurov/brunch-marcos &lt;project name&gt;</code> to download the skeleton into your project folder.</li>
 <li><code>$ cd &lt;project name&gt;</code></li>
-<li>Run <code>npm install</code> to install any node dependencies listed in <code>package.json</code>.</li>
 </ul>
-<h2>Compiling</h2>
+<h2 id="compiling">Compiling</h2>
 <ul>
 <li>To build your project run <code>brunch build</code>.</li>
 <li>To continually watch your project folder changes and auto-compile, use <code>brunch watch</code>.</li>
 <li>If you want to start a simple server, run <code>brunch watch --server</code></li>
-<li>If you want to build a minified version (for production release), run <code>brunch build --minify</code></li>
+<li>If you want to build a minified version (for production release), run <code>brunch build --production</code></li>
 </ul>
-<p>See more info on the <a href="http://brunch.readthedocs.org/en/latest/">official brunch docs</a>
-
-</p>
-<h2>Unit Testing</h2>
-<p>The <a href="http://visionmedia.github.com/mocha/">Mocha</a> test-suite is included by default.  Files located in <code>tests</code> that end with <code>_test.js</code> (or .coffee) are automatically packaged.
-
-</p>
-<p>To run tests independent of the browser, execute <code>brunch test</code>; to run them in the browser, navigate to <code>public/test/index.html</code>.  Test-related code is automatically recompiled during <code>brunch build</code> and <code>brunch watch</code>, and will automatically refresh the test page.
-To set up and get started on using a specific testing interface, take a look at the following guides:
-
-</p>
+<p>See more info on the <a href="http://brunch.readthedocs.org/en/latest/">official brunch docs</a></p>
+<h2 id="unit-testing">Unit Testing</h2>
+<p>The <a href="http://visionmedia.github.com/mocha/">Mocha</a> test-suite is included by default.  Files located in <code>tests</code> that end with <code>_test.js</code> (or .coffee) are automatically packaged.</p>
+<p>To run tests in the browser, navigate to <code>public/test/index.html</code>.  Test-related code is automatically recompiled during <code>brunch build</code> and <code>brunch watch</code>, and will automatically refresh the test page.
+To set up and get started on using a specific testing interface, take a look at the following guides:</p>
 <ul>
 <li><a href="https://gist.github.com/4361378">TDD</a></li>
 <li><a href="https://gist.github.com/4361398">BDD</a></li>
 <li><a href="https://gist.github.com/4361413">QUnit</a></li>
 </ul>
-<h1>More Information</h1>
-<h2>Todo</h2>
+<h1 id="more-information">More Information</h1>
+<h2 id="todo">Todo</h2>
 <ul>
-<li>[x] Get a basic skeleton app</li>
-<li>[x] Write tests for it</li>
-<li>[ ] Write generators</li>
-<li>[x] include a more involved example application</li>
-<li>[ ] screencast</li>
+<li><del>Get a basic skeleton app</del></li>
+<li><del>Write tests for it</del></li>
+<li>Write generators</li>
+<li>Include a more involved example application</li>
+<li>Screencast</li>
 </ul>
-<h2>Dependency Versions</h2>
-<p>Might not be entirely up to date, <code>Handlebars</code> and <code>Stylus</code> depend on their respective <code>brunch</code> plugins
-
-</p>
-<ul>
-<li><a href="http://backbonejs.org/">Backbone 0.9.9</a></li>
-<li><a href="http://lodash.com">Lo-Dash v1.0.0-rc.3</a></li>
-<li><a href="http://jquery.com/">jQuery 1.8.3</a></li>
-<li><a href="https://github.com/tbranyen/backbone.layoutmanager">LayoutManager 0.7.3</a></li>
-<li><a href="http://handlebarsjs.com">Handlebars 1.0rc1</a></li>
-<li><a href="http://learnboost.github.com/stylus/">Stylus 0.30.x</a> with <a href="http://visionmedia.github.com/nib/">nib 0.8.x</a></li>
-</ul>
-<h2>Whys</h2>
-<h3>Stylus</h3>
+<h2 id="whys">Whys</h2>
+<h3 id="stylus">Stylus</h3>
 <p>Stylus is used as a <code>CSS</code> preprocessor that abstracts away a lot of painful things
 we deal in with in <code>CSS</code>. It is solving the same problem as <code>LESS</code> and <code>SASS</code> with following
-additional benefits:
-
-</p>
+additional benefits:</p>
 <ul>
 <li>Customizable syntax. You can write plain CSS or you may drop braces / semicolons or even <code>:</code>s etc.</li>
-<li>Transparent mixins. If you don&#39;t need a lot of features, you can just stick to dropping vendor prefixes. But, of course, advanced features are supported too.</li>
-<li><code>nib.</code> Contains all CSS3 mixins. It&#39;s like a <code>compass</code> for <code>sass</code> but way better because of transparent mixins</li>
+<li>Transparent mixins. If you don't need a lot of features, you can just stick to dropping vendor prefixes. But, of course, advanced features are supported too.</li>
+<li><code>nib.</code> Contains all CSS3 mixins. It's like a <code>compass</code> for <code>sass</code> but way better because of transparent mixins</li>
 </ul>
-<p>As far as compiling is concerned everything gets turned into css and compiles down to a single file when you have <code>brunch watch</code> running or do <code>brunch build</code>
-
-</p>
-<h3>Handlebars</h3>
-<p>Handlebars was chosen due to its popularity and the way it restricts what you can do in templates, while retaining the flexibility of allowing custom functions to format the data you pass in. It closely resembles <code>Mustache</code> and immediately familiar to anyone that knows <code>HTML</code> as its not inventing any new syntax.  As a result its also one of the fastest options on the market. It is also faster than underscores template implementation.
-
-</p>
-<h3>Backbone LayoutManager (LM)</h3>
-<p><code>LM</code> provides a logical structure for assembling layouts with Backbone Views. Designed to be adaptive and configurable for painless integration. Includes automatic cleanup as well as ability to define your own to make sure all your events are taken care of and no zombies are left hungering for brains.
-
-</p>
-<h2>License</h2>
-<p>Brunch Marcos is distributed under the MIT license. All 3rd party libraries and components are distributed under their respective license terms.
-
-</p>
+<p>As far as compiling is concerned everything gets turned into css and compiles down to a single file when you have <code>brunch watch</code> running or do <code>brunch build</code></p>
+<h3 id="handlebars">Handlebars</h3>
+<p>Handlebars was chosen due to its popularity and the way it restricts what you can do in templates, while retaining the flexibility of allowing custom functions to format the data you pass in. It closely resembles <code>Mustache</code> and immediately familiar to anyone that knows <code>HTML</code> as its not inventing any new syntax.  As a result its also one of the fastest options on the market. It is also faster than underscores template implementation.</p>
+<h3 id="backbone-layoutmanager-lm">Backbone LayoutManager (LM)</h3>
+<p><code>LM</code> provides a logical structure for assembling layouts with Backbone Views. Designed to be adaptive and configurable for painless integration. Includes automatic cleanup as well as ability to define your own to make sure all your events are taken care of and no zombies are left hungering for brains.</p>
+<h2 id="license">License</h2>
+<p>Brunch Marcos is distributed under the MIT license. All 3rd party libraries and components are distributed under their respective license terms.</p>
 <pre><code>Copyright (C) 2012 Stepan Mazurov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
@@ -105,4 +74,5 @@ Software.
 THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
 WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</code></pre>
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
