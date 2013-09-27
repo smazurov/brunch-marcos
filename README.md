@@ -17,17 +17,16 @@ into it, and by using brunch you can incorporate `CoffeeScript`, `LiveScript` or
 ## Install
 
 - Install [node.js](http://nodejs.org)
-- Install Brunch: `sudo npm install -g brunch`
-- Run `brunch new <project name> -s github://smazurov/brunch-marcos` to download the skeleton into your project folder.
+- Install Brunch & bower: `sudo npm install -g brunch bower`
+- Run `brunch new gh:smazurov/brunch-marcos <project name>` to download the skeleton into your project folder.
 - `$ cd <project name>`
-- Run `npm install` to install any node dependencies listed in `package.json`.
 
 ## Compiling
 
 - To build your project run `brunch build`.
 - To continually watch your project folder changes and auto-compile, use `brunch watch`.
 - If you want to start a simple server, run `brunch watch --server`
-- If you want to build a minified version (for production release), run `brunch build --minify`
+- If you want to build a minified version (for production release), run `brunch build --production`
 
 See more info on the [official brunch docs](http://brunch.readthedocs.org/en/latest/)
 
@@ -46,11 +45,11 @@ To set up and get started on using a specific testing interface, take a look at 
 
 ## Todo
 
-- [x] Get a basic skeleton app
-- [x] Write tests for it
-- [ ] <del>Write generators</del>
-- [x] include a more involved example application
-- [ ] screencast
+- ~~Get a basic skeleton app~~
+- ~~Write tests for it~~
+- Write generators
+- Include a more involved example application
+- Screencast
 
 ## Whys
 
