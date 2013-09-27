@@ -20,8 +20,9 @@
 nbproject
 Thumbs.db
 
-# NPM packages folder.
+# NPM/bower packages folder.
 node_modules/
+bower_components/
 
 # Project specific
 public

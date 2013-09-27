@@ -17,17 +17,16 @@ into it, and by using brunch you can incorporate `CoffeeScript`, `LiveScript` or
 ## Install
 
 - Install [node.js](http://nodejs.org)
-- Install Brunch: `sudo npm install -g brunch`
-- Run `brunch new <project name> -s github://smazurov/brunch-marcos` to download the skeleton into your project folder.
+- Install Brunch & bower: `sudo npm install -g brunch bower`
+- Run `brunch new gh:smazurov/brunch-marcos <project name>` to download the skeleton into your project folder.
 - `$ cd <project name>`
-- Run `npm install` to install any node dependencies listed in `package.json`.
 
 ## Compiling
 
 - To build your project run `brunch build`.
 - To continually watch your project folder changes and auto-compile, use `brunch watch`.
 - If you want to start a simple server, run `brunch watch --server`
-- If you want to build a minified version (for production release), run `brunch build --minify`
+- If you want to build a minified version (for production release), run `brunch build --production`
 
 See more info on the [official brunch docs](http://brunch.readthedocs.org/en/latest/)
 
@@ -46,22 +45,11 @@ To set up and get started on using a specific testing interface, take a look at 
 
 ## Todo
 
-- [x] Get a basic skeleton app
-- [x] Write tests for it
-- [ ] <del>Write generators</del>
-- [x] include a more involved example application
-- [ ] screencast
-
-## Dependency Versions
-
-Might not be entirely up to date, `Handlebars` and `Stylus` depend on their respective `brunch` plugins
-
-* [Backbone 1.0.0](http://backbonejs.org/)
-* [Lo-Dash v1.0.1](http://lodash.com)
-* [jQuery 1.9.1](http://jquery.com/)
-* [LayoutManager 0.8.7](https://github.com/tbranyen/backbone.layoutmanager)
-* [Handlebars 1.0.10](http://handlebarsjs.com)
-* [Stylus 0.32.x](http://learnboost.github.com/stylus/) with [nib 0.9.x](http://visionmedia.github.com/nib/)
+- ~~Get a basic skeleton app~~
+- ~~Write tests for it~~
+- Write generators
+- Include a more involved example application
+- Screencast
 
 ## Whys
 
@@ -85,7 +73,8 @@ Handlebars was chosen due to its popularity and the way it restricts what you ca
 
 `LM` provides a logical structure for assembling layouts with Backbone Views. Designed to be adaptive and configurable for painless integration. Includes automatic cleanup as well as ability to define your own to make sure all your events are taken care of and no zombies are left hungering for brains.
 
-##License
+## License
+
 Brunch Marcos is distributed under the MIT license. All 3rd party libraries and components are distributed under their respective license terms.
 
 ```
