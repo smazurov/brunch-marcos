@@ -52,17 +52,6 @@ To set up and get started on using a specific testing interface, take a look at 
 - [x] include a more involved example application
 - [ ] screencast
 
-## Dependency Versions
-
-Might not be entirely up to date, `Handlebars` and `Stylus` depend on their respective `brunch` plugins
-
-* [Backbone 1.0.0](http://backbonejs.org/)
-* [Lo-Dash v1.0.1](http://lodash.com)
-* [jQuery 1.9.1](http://jquery.com/)
-* [LayoutManager 0.8.7](https://github.com/tbranyen/backbone.layoutmanager)
-* [Handlebars 1.0.10](http://handlebarsjs.com)
-* [Stylus 0.32.x](http://learnboost.github.com/stylus/) with [nib 0.9.x](http://visionmedia.github.com/nib/)
-
 ## Whys
 
 ### Stylus
@@ -85,7 +74,8 @@ Handlebars was chosen due to its popularity and the way it restricts what you ca
 
 `LM` provides a logical structure for assembling layouts with Backbone Views. Designed to be adaptive and configurable for painless integration. Includes automatic cleanup as well as ability to define your own to make sure all your events are taken care of and no zombies are left hungering for brains.
 
-##License
+## License
+
 Brunch Marcos is distributed under the MIT license. All 3rd party libraries and components are distributed under their respective license terms.
 
 ```

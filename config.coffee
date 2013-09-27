@@ -8,17 +8,11 @@ exports.config =
     javascripts:
       joinTo:
         'scripts/app.js': /^app/
-        'scripts/vendor.js': /^vendor/
+        'scripts/vendor.js': /^(vendor|bower_components)/
         'test/scripts/test.js': /^test(\/|\\)(?!vendor)/
         'test/scripts/vendor.js': /^test(\/|\\)(?=vendor)/
       order:
-        before: [
-          'vendor/scripts/console-helper.js',
-          'vendor/scripts/jquery-1.9.1.js',
-          'vendor/scripts/lodash.underscore-1.0.1.js',
-          'vendor/scripts/backbone-1.0.0.js',
-          'vendor/scripts/backbone.layoutmanager-0.8.7.js'
-        ]
+        before: []
     stylesheets:
       joinTo:
         'styles/app.css': /^(app|vendor)/,
@@ -32,9 +26,10 @@ exports.config =
     templates:
       joinTo: 'scripts/app.js'
 
-  stylus: # https://github.com/brunch/stylus-brunch#spriting
-    spriting: no,
-    iconPath: 'app/assets/images'
+  plugins:
+    stylus: # https://github.com/brunch/stylus-brunch#spriting
+      spriting: no,
+      iconPath: 'app/assets/images'
   minify: no
   modules:
     wrapper: 'commonjs'
